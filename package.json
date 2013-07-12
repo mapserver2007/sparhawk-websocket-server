@@ -1,15 +1,20 @@
 {
-  "name": "aphrael-node-server",
+  "name": "sparhawk-websocket-server",
   "version": "0.0.1",
-  "description": "aphrael server",
+  "description": "sparhawk websocket server",
   "main": "server.js",
+  "dependencies": {
+    "log4js": "~0.6.6",
+    "ws": "~0.4.27"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/aphrael/aphrael-node-server.git"
+    "url": "git://github.com/mapserver2007/sparhawk-websocket-server.git"
   },
   "keywords": [
     "node.js",
@@ -18,16 +23,8 @@
   "author": "Ryuichi TANAKA (mapserver2007)",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "gitHead": "b9243093d016a248ee6dc359de8e9527a857037b",
+  "gitHead": "fcd9f0c2756669a782c1cdf79a9c8599af60ef61",
   "bugs": {
-    "url": "https://github.com/aphrael/aphrael-node-server/issues"
-  },
-  "dependencies": {
-    "ws": "latest",
-    "log4js": "latest"
-  },
-  "engines": {
-    "node": "0.10.x",
-    "npm": "1.2.x"
+    "url": "https://github.com/mapserver2007/sparhawk-websocket-server/issues"
   }
 }

@@ -22,3 +22,9 @@ end
 task :heroku_stop do
   sh "heroku scale web=0"
 end
+
+# Node Ninja server
+task :ssh do
+  sh 'ssh node@210.152.156.63'
+end
+
