@@ -1,0 +1,13 @@
+{
+    "appenders": [
+        {
+            "type": "dateFile",
+            "filename": "log/aphrael.log",
+            "pattern": "-yyyy-MM-dd",
+            "maxLogSize": 20480
+        },
+        {
+            "type": "console"
+        }
+    ]
+}
