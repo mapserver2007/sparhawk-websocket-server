@@ -9,7 +9,7 @@
  */
 
 var WS_PORT = 9224;
-var REST_PORT = 9225;
+var REST_PORT = 80;
 
 // Logger
 var log4js = require('log4js');
