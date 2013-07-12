@@ -2,7 +2,7 @@
     "appenders": [
         {
             "type": "dateFile",
-            "filename": "log/sparhawk.log",
+            "filename": "logs/sparhawk.log",
             "pattern": "-yyyy-MM-dd",
             "maxLogSize": 20480
         },
