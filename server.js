@@ -23,10 +23,6 @@ var server = new WebSocketServer({
     port: WS_PORT
 });
 
-var close = function(code) {
-    logger.info("connecton closed: CODE [" + code + "]");
-};
-
 var connection = null;
 server.on('connection', function(ws) {
     connection = ws;
