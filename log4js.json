@@ -2,7 +2,7 @@
     "appenders": [
         {
             "type": "dateFile",
-            "filename": "log/aphrael.log",
+            "filename": "log/sparhawk.log",
             "pattern": "-yyyy-MM-dd",
             "maxLogSize": 20480
         },
