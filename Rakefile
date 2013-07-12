@@ -1,26 +1,6 @@
-# Heroku server
+# github
 task :github_push do
   sh 'git push origin master'
-end
-
-task :heroku_deploy => [:github_push] do
-  sh 'git push heroku master'
-end
-
-task :heroku_create do
-  sh "heroku create --stack cedar sparhawk-websocket-server"
-end
-
-task :timezone do
-  sh "heroku config:add TZ=Asia/Tokyo"
-end
-
-task :heroku_start do
-  sh "heroku scale web=1"
-end
-
-task :heroku_stop do
-  sh "heroku scale web=0"
 end
 
 # Node Ninja server
@@ -28,3 +8,6 @@ task :ssh do
   sh 'ssh node@210.152.156.63'
 end
 
+task :ninja_deploy => [:github_push] do
+  sh 'git push node-ninja master'
+end
