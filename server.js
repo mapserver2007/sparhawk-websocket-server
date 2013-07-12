@@ -48,9 +48,15 @@ app.get('/rest/position', function(req, res) {
         res.send(200);
     }
     catch (e) {
-        logger.error(e.message);
-        throw e;
+        // Chromeからのコネクションがない場合
+        if (/Cannot call method 'send'/.test(e.message)) {
+            logger.info("WebSocket connection is required from Chrome.");
+            res.send(404);
+        }
+        else {
+            logger.error(e.stack);
+            throw e;
+        }
     }
-
 });
 app.listen(REST_PORT);
