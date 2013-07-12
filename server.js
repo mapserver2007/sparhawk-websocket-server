@@ -31,6 +31,8 @@ var close = function(code) {
     logger.info("connecton closed: CODE [" + code + "]");
 };
 
+logger.info("listen port: " + PORT);
+
 server.on('connection', function(ws) {
     // Chromeからの接続
     if (ws.protocol === WS_PROTOCOL) {
